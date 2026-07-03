@@ -1,0 +1,25 @@
+{
+  "name": "route-receipt",
+  "version": "0.1.0",
+  "description": "BGP route receipts — proof of what the internet actually saw when you announced a prefix",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "route-receipt": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "check": "biome check . --write && tsc --noEmit",
+    "lint": "biome lint .",
+    "format": "biome format . --write",
+    "receipt": "tsx src/cli.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.14",
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
